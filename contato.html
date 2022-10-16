@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF8">
+        <title>OficinaJr/Contatos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <header>
+        <div class="caixa">
+            <p id="img-centra"><img src="imagens/logoJr3.jpg" alt="Logo da Oficina"></p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+   
+        <main>
+         
+            <form>
+                <fieldset>
+                    <label for="nome">Nome<input type="text" id="nome" class="input-padrao"
+                     required placeholder="Nome"></label>
+                
+                    <label for="sobrenome">SobreNome<input type="text" id="sobrenome" class="input-padrao" 
+                    required placeholder="Sobrenome" ></label>
+
+                    <label for="email">Email<input type="email" id="email" class="input-padrao" 
+                    required placeholder="ex@email.com"></label>
+                
+                    <label for="telefone">Telefone<input type="tel" id="telefone" class="input-padrao" 
+                    required placeholder="(xx)xxxxx-xxxx"></label>
+                
+                    <label for="mensagem">Mensagem<textarea cols="95" rows="10" id="mensagem" class="input-padrao" 
+                    required></textarea></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual a preferência do nosso contato?</legend>
+                    <label for="email-radio">Email<input type="radio"  name="contato" 
+                    value="email" id="email-radio"></label>
+                    
+                    <label for="telefone-radio">Telefone<input type="radio" name="contato" 
+                    value="telefone" id="telefone-radio"></label>
+                    
+                    <label for="whatsapp-radio">Whatsapp<input type="radio" name="contato" 
+                    value="whatsapp" id="whatsapp-radio" checked></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Horário de atendimento:</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>Seg a Sex</td>
+                        <td>08h - 17h</td>
+                    </tr>
+                    <tr>
+                        <td>Sabádo</td>
+                        <td>08h - 12h</td>
+                    </tr>
+                </tbody>    
+            
+            </table>
+
+        </main>
+   
+        <footer>
+            <img src="imagens/logoJr3.jpg" alt="Logo da oficina">
+            <p class="copyright">&copy; Copyright Centro Automotivo Jr - 2022</p>
+        </footer>
+    </body>
+
+</html>
