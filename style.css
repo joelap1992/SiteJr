@@ -241,6 +241,7 @@ fieldset{
 
 .conteudo-servicos{
     width: 940px;
+    margin-bottom: 20px;
  
 }
 
@@ -256,8 +257,51 @@ fieldset{
     margin: 0 90px;
 }
 
+/*
+Para selecionar a primeira linha de um texto
 .itens:first-child{
     font-weight: bold;
 }
+*/
 
+.itens::before{
+    content: "✓";
+    margin: 0 5px;
+}
 
+.img-servico{
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.img-servico:hover{
+    opacity: 0.5;
+}
+/*configuração de responsividade*/
+@media screen and (max-width:480px) {
+    .principal,.produtos,.produto-descricao,.produto-preco{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav a{
+        position: static;
+    }
+
+    .lista-servicos,.img-servico{
+        width: 100%;
+    }
+
+    fieldset{
+        text-align: center;
+    }
+
+    .lista-servicos,.caixa{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
