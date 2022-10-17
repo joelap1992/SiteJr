@@ -99,20 +99,25 @@ nav a:hover{
 
 main{
     width:940px;
-    background:linear-gradient(#ffff,rgb(121, 110, 110));
+    background:linear-gradient(rgb(90, 85, 85),#ffffff);
 }
 
-form label, form legend {
+form{
+    margin: 0 auto;
+    max-width:800px;
+}
+form fieldset label, form legend {
     display: block;
     font-size: 20px;
-    margin: 0 0 20px;
+    margin: 10px auto;
     color:black;
 }
 
 .input-padrao{
     display: block;
     padding: 10px 10px;
-    width: 80%;
+    width: 50%;
+    margin: 0 auto;
     
 }
 
@@ -134,13 +139,8 @@ footer{
     margin: 20px 0 0;
 }
 
-.form-centralizado{
-    margin-left: 300px;
-
-}
-
 .enviar{
-    width: 40%;
+    width: 50%;
     padding: 10px 0;
     background: #cf2a21;
     color: #ffffff;
@@ -150,6 +150,8 @@ footer{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+    margin: 10px auto ;
+    
 }
 
 .enviar:hover{
@@ -158,7 +160,7 @@ footer{
 }
 
 table{
-    margin: 20px 0 0;
+    margin: 20px auto 0;
 }
 
 thead{
@@ -178,7 +180,7 @@ body{
 }
 
 fieldset{
-    border: none;
+    border:none;
 }
 #img-centra{
     width: 940px;
@@ -199,23 +201,32 @@ fieldset{
 
 .principal strong{
     font-style: bold;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #cf2a21;
+    margin: 10px 10px ;
 }
 
 .logo-inicio{
-    width: 120px;
+    width: 150px;
     float: left;
-    margin:0 20px 20px 0;
+    margin:0 10px 20px 0;
 
 }
 
 .principal{
     font-style: italic;
-    width: 940px;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 
+.principal p{
+    margin: 10px auto 20px;
+}
+
+.principal a{
+    margin: 20px 0 0 200px ;
+    color:red;
+    font-weight: bold;
+}
 
 .mapa {
     text-align: center;
@@ -239,6 +250,7 @@ fieldset{
 .itens{
     line-height: 1.5;
     list-style: none;
+    margin: 0 90px;
 }
 
 .itens:first-child{
