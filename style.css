@@ -105,30 +105,52 @@ main{
     background:linear-gradient(rgb(90, 85, 85),#ffffff);
 }
 
-form{
-    margin: 0 auto;
-    max-width:800px;
+form label{
+    display: inline-block;
+    margin: 10px 450px 10px;
+    max-width:840px;
+   
 }
-form fieldset label, form legend {
+form legend {
     display: block;
     font-size: 20px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 40px 10px 1px;
     color:black;
 }
 
-.input-padrao{
+
+.input-padrao {
     display: block;
     padding: 10px 10px;
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
+    margin: 5px auto 10px;
+    border-radius: 10px;
     
 }
+
 select{
-    margin: 10px 0 10px 10px;
+    margin: 10px 0 10px 450px;
+}
+
+.radios legend{
+    display: inline-block;
+    text-align: center;
+    margin-right:10px  ;
+}
+
+.radios label{
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+fieldset legend{
+    text-align: center;
 }
 
 .checkbox{
-    margin: 20px auto;
+    display: inline;
+    margin: 20px 280px;
 }
 
 footer{
@@ -156,7 +178,7 @@ footer{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
-    margin: 10px auto ;
+    margin: 10px auto 10px 250px ;
     
 }
 
@@ -166,7 +188,7 @@ footer{
 }
 
 table{
-    margin: 20px 0 10px 70px;
+    margin: 20px 0 10px 400px;
 }
 
 thead{
@@ -185,9 +207,6 @@ body{
     background-color: #2c2a2a;
 }
 
-fieldset{
-    border:none;
-}
 #img-centra{
     width: 940px;
 }
@@ -281,6 +300,8 @@ Para selecionar a primeira linha de um texto
 .img-servico:hover{
     opacity: 0.5;
 }
+
+
 /*configuração de responsividade*/
 @media screen and (max-width:480px) {
     .principal,.produtos,.produto-descricao,.produto-preco{
